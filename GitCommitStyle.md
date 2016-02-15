@@ -32,9 +32,9 @@
     - [DEL] Delete the duplicate template file
     - [FMT] Format the evaluate module code
 5. 第二行是空行，一些处理工具会把第一行作为邮件的标题，其它的作为正文，所以需要一个空行来区分标题和正文。如果后面没有信息详述，此空行可以省略。
-6. 第三行开始是commit 信息详述，每行的长度控制在 72个字符(或 36个汉字)之内。该信息应该要保证足够的详细，开发人员看了之后可以可以在合理的时间内实现几乎相同的补丁程序。
+6. 第三行开始是commit 信息详述，每行的长度控制在 72个字符(或 36个汉字)之内。该信息应该要保证足够的详细，开发人员看了之后可以在合理的时间内实现几乎相同的补丁程序。
 7. 若有bug跟踪软件，对于每一次的bug修复的提交，commit信息中都应该包含bug的ID，commit信息分为两部分，第一部分是提交的概述，第二部分是对该次bug提交的详细描述，例如：
 
-    [FIX] bugfix <bug_id>
-
-    Bug <bug_id> - Something goes wrong
+>    [FIX] bugfix <bug_id>
+>    
+>    Bug <bug_id> - Something goes wrong
