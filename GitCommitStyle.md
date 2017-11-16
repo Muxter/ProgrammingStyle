@@ -19,22 +19,31 @@
 2. 提交的信息，尽量用英语表述，如果实在用英语表述不清楚的，可以用中文。
 3. 第一行是commit信息概述，控制50个字符（或25个汉字）以内。结尾统一都不要使用句号，因为后面通常都会有详细描述。
 4. 在第一行的commit信息中，可以加一些前缀，它可以帮助我们对commit进行分类，同时当我们使用git log来检查，或者查找某一个提交的，非常有用。可用的前缀有：
-    - ADD：增加新的功能，新的单元测试等。
-    - REV：修改代码的实现，增强了代码的健壮性，重构代码，优化一些功能的细节等。
-    - FIX：修复某一个bug。
-    - DEL：删除一些文件。
-    - FMT：修改主要是提高代码的规范，格式化原来的代码，例如去掉一些空格、空行，将Tab替换成空格等，没有修改代码的功能。
+    - FEAT： 增加了新功能
+    - TEST： 增加了新单元测试
+    - DOC：  增加了文档
+    - FIX：  修复某一个bug
+    - OPT：  优化了某些代码块，性能等，重构了某个模块
+    - DEL：  删除一些文件
+    - FMT：  格式化代码
+    - CHORE：一些琐碎的事情，比如修改了注释，升级了依赖的版本号
+    - BUILD：构建了新版本
 
     针对上述的几个前缀，举几个例子：
-    - [ADD] Add user register account by email
-    - [REV] Update all app download qcode picture
-    - [FIX] Fix sms urls that can not access
-    - [DEL] Delete the duplicate template file
-    - [FMT] Format the evaluate module code
+    - FEAT add user register account by email
+    - TEST add new test case for signing up
+    - DOC add doc of account design
+    - FIX issue-1011 sms urls that can not access
+    - OPT refactor account module
+    - DEL delete deprecated classes
+    - FMT format the evaluate module code
+    - CHORE update all app download qcode picture
+    - BUILD release new version
+
 5. 第二行是空行，一些处理工具会把第一行作为邮件的标题，其它的作为正文，所以需要一个空行来区分标题和正文。如果后面没有信息详述，此空行可以省略。
 6. 第三行开始是commit 信息详述，每行的长度控制在72个字符(或36个汉字)之内。该信息应该要保证足够的详细，开发人员看了之后可以在合理的时间内实现几乎相同的补丁程序。
 7. 若有bug跟踪软件，对于每一次的bug修复的提交，commit信息中都应该包含bug的ID，commit信息分为两部分，第一部分是提交的概述，第二部分是对该次bug提交的详细描述，例如：
 
->    [FIX] Bug fixes <bug_id>
+>    FIX <bug_id> Bug fixes
 >    
 >    Bug <bug_id> - Something goes wrong
