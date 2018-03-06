@@ -49,3 +49,6 @@
 >    fix(bug_id): Bug fixes
 >    
 >    Bug <bug_id>  Something goes wrong
+
+## Reference
+[https://github.com/commitizen/cz-cli](https://github.com/commitizen/cz-cli)
